@@ -23,7 +23,7 @@ class AddDiscount extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.white,
       body: Container(
-          padding: EdgeInsets.only(left: 2.h, right: 1.h),
+          padding: EdgeInsets.only(left: 3.h, right: 1.h),
           child: Form(
             key: controller.formState4,
             onChanged: controller.productList.clear,
