@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:list_wheel_scroll_view_nls/list_wheel_scroll_view_nls.dart';
 import 'package:pharma_man/core/const/appcolor.dart';
 import 'package:pharma_man/core/functions/valid.dart';
 import 'package:pharma_man/view/widgets/custom_text.dart';
@@ -70,22 +69,21 @@ class SalesScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          height: 6.5.h,
-                          child: Form(
-                            key: controllerInvoice.formState1,
-                            child: CustomTextForm(
-                              hint: 'Customer Name',
-                              mycontroller: controllerInvoice.nameCustomer,
-                              validator: (val) {
-                                return validInput(val!, 2, 50, 'username');
-                              },
-                            ),
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Container(
+                        height: 6.5.h,
+                        child: Form(
+                          key: controllerInvoice.formState1,
+                          child: CustomTextForm(
+                            hint: 'Customer Name',
+                            mycontroller: controllerInvoice.nameCustomer,
+                            validator: (val) {
+                              return validInput(val!, 2, 50, 'username');
+                            },
                           ),
                         ),
                       ),
-                    
+                    ),
                   ),
                   IconButton(
                     onPressed: () {
@@ -163,17 +161,6 @@ class SalesScreen extends StatelessWidget {
                       }
                       String? productId = prefs.getString('key1');
                       String? productId1 = prefs.getString('key2');
-
-                      // print(controllerInvoice.nameCustomer.text +
-                      //     '   firstValue--->' +
-                      //     firstValue +
-                      //     '  secondValue----->' +
-                      //     secondValue +
-                      //     'id1---->' +
-                      //     '${productId!}' +
-                      //     '   id2---->' +
-                      //     '${productId1!}');
-
                       controllerInvoice.addinvoice(
                         controllerInvoice.nameCustomer.text,
                         firstValue,

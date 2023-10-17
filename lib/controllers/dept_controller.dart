@@ -16,16 +16,12 @@ import '../model/dept.dart';
 class DebtController extends GetxController {
   late final TextEditingController name;
   late final TextEditingController value;
-  // late final int role_id;
+
   RxBool isLoading = false.obs;
 
   GlobalKey<FormState> formState = GlobalKey<FormState>();
   GlobalKey<FormState> formState2 = GlobalKey<FormState>();
-  //MyServices myServices = Get.find();
-
-  // goToForgetPass() {
-  //   Get.toNamed(AppRoute.forgetPass);
-  // }
+  
 
   Future addDebt(String name, String value) async {
     try {

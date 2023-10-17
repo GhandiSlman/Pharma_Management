@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
-
 import 'package:pharma_man/controllers/all_suppliers_controller.dart';
 import 'package:pharma_man/controllers/auth/signup_controller.dart';
 import 'package:pharma_man/core/const/routes.dart';
