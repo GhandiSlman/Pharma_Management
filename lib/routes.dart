@@ -20,7 +20,7 @@ import 'package:pharma_man/view/screens/outstock_product.dart';
 import 'package:pharma_man/view/screens/post_supplier.dart';
 
 import 'package:pharma_man/view/screens/add_purchase.dart';
-import 'package:pharma_man/view/screens/main_sale.dart';
+
 import 'package:pharma_man/view/screens/sales.dart';
 import 'package:pharma_man/view/screens/update_donation.dart';
 

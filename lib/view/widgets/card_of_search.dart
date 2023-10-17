@@ -19,7 +19,7 @@ class CardOfSearchProduct extends StatelessWidget {
     Obx(() {
       return Container(
         height: 60.h,
-        //    width: MediaQuery.of(context).size.width,
+     
         child: 
           
             ListView(
@@ -64,21 +64,6 @@ class CardOfSearchProduct extends StatelessWidget {
    });
   }
 }
-
-// buildCardItems({
-//   int? id,
-//   int? id1,
-//   String? name,
-//   int? price,
-//   String? date,
-//   String? paracode,
-//   int? quantity,
-//   required double index,
-//   required ProductSale productSale,
-//   required SearchNameController controller,
-// }) {
-//   return
-// }
 class buildCardItems extends StatelessWidget {
   final int? id;
   int? id1;
@@ -104,18 +89,6 @@ class buildCardItems extends StatelessWidget {
     required this.productSale,
     required this.controller,
   }) : super(key: key);
-  // final int? id,
-  // int? id1,
-  // String? name,
-  // int? price,
-  // String? date,
-  // String? paracode,
-  // int? quantity,
-  // required double index,
-  // required ProductSale productSale,
-  // required SearchNameController controller,
-  //  buildCardItems({super.key});
-
   @override
   Widget build(BuildContext context) {
     return

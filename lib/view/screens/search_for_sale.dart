@@ -10,8 +10,8 @@ import '../../controllers/search_baracode_controller.dart';
 import '../../controllers/search_name_controller.dart';
 import '../widgets/card_of_search.dart';
 
-class Customer1 extends StatelessWidget {
-  // CustomerController controller = Get.put(CustomerController());
+class SearchForSale extends StatelessWidget {
+
   final SearchNameController controller = Get.put(SearchNameController());
   final BacodeController controller1 = Get.put(BacodeController());
   final SearchBaracodeController controller2 =
@@ -51,21 +51,7 @@ class Customer1 extends StatelessWidget {
                               onChanged: controller.onSearchTextChanged,
                               mycontroller: controller.search,
                             )),
-                        // Padding(
-                        //   padding: EdgeInsets.only(top: 0.h),
-                        //   child: CustomIconButton(
-                        //     icon: Icon(
-                        //       Icons.qr_code,
-                        //       color: AppColor.color1,
-                        //     ),
-                        //     onPressed: () async {
-                        //       controller1.scanBarcode();
-                        //       print('rrrrrrrrrrrrrrr'+controller1.barcode.toString());
-                        //       controller2.onSearchBaracodeChanged(
-                        //           controller1.barcode.toString());
-                        //     },
-                        //   ),
-                        // ),
+                        
                       ],
                     ),
                     CardOfSearchProduct(),
@@ -74,17 +60,6 @@ class Customer1 extends StatelessWidget {
               ],
             ),
           )),
-      // floatingActionButton: FloatingActionButton(
-      //     backgroundColor: AppColor.color4,
-      //     onPressed: () {
-      //       Get.toNamed(AppRoute.slaesScreen);
-      //       controller.search.clear();
-      //     },
-      //     child: Icon(
-      //       Icons.add_shopping_cart,
-      //       color: AppColor.mainColor,
-      //       size: 30,
-      //     )),
     );
   }
 }

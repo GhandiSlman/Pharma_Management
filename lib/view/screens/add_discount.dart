@@ -52,21 +52,6 @@ class AddDiscount extends StatelessWidget {
                               onChanged: controller.onSearchTextChanged,
                               mycontroller: controller.search,
                             )),
-                       
-                        // Padding(
-                        //   padding: EdgeInsets.only(top: 0.h),
-                        //   child: CustomIconButton(
-                        //     icon: Icon(
-                        //       Icons.qr_code,
-                        //       color: AppColor.color1,
-                        //     ),
-                        //     onPressed: () async {
-                        //       controller1.scanBarcode();
-                        //       controller2.onSearchBaracodeChanged(
-                        //           controller1.barCode!.value.toString());
-                        //     },
-                        //   ),
-                        // ),
                       ],
                     ),
                   
